@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Main = () => (
+const Main = ({ title = 'Boilerplate React' }) => (
   <main>
-    <h1>Hello, World!</h1>
+    <h1>{title}</h1>
   </main>
 );
 
