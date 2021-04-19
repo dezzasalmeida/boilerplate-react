@@ -1,11 +1,12 @@
 import React from 'react';
 import Main from './components/Main';
-import './styles/global.css';
+import { GlobalStyles } from './styles/global';
 
 const App = () => {
   return (
     <>
       <Main />
+      <GlobalStyles />
     </>
   );
 };
