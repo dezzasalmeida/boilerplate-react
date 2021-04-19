@@ -1,8 +1,8 @@
 import { ThemeProvider } from 'styled-components';
-import GlobalStyles from '../src/styles/global';
+import { GlobalStyles } from 'styles/global';
 import theme from 'styles/theme';
 
-const decorators = [
+export const decorators = [
   (Story) => (
     <ThemeProvider theme={theme}>
       <GlobalStyles />
@@ -10,5 +10,3 @@ const decorators = [
     </ThemeProvider>
   )
 ];
-
-export default decorators;
