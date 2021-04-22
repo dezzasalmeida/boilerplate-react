@@ -1,7 +1,8 @@
 import styled, { css } from 'styled-components';
+import { HeadingProps } from '.';
 
-export const Wrapper = styled.h2`
-  ${({ theme }) => css`
-    color: ${theme.colors.purpleLight};
+export const Wrapper = styled.h2<HeadingProps>`
+  ${({ theme, color }) => css`
+    color: ${theme.colors[color!]};
   `}
 `;
